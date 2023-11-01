@@ -3,6 +3,9 @@
     "name": "Personal Dashboard",
     "version": "1.0.0",
     "description": "Just for practicing async JS",
+    "permissions":[
+        "geolocation"
+    ],
     "action": {
         "default_icon": "icon.png"
     },
