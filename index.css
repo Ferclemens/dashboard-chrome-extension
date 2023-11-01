@@ -9,13 +9,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
+    color: #292828;
+    text-shadow: 0px 0px 4px whitesmoke;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow:1px 1px 2px #0e0e0e;
 }
 
 main {
-    padding: 15px;
+    padding: 15px 25px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,18 @@ main {
     display: flex;
     justify-content: space-between;
 }
+.center {
+    display: flex;
+    justify-content: center;
+}
+.search-input {
+    width: 40%;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+.search-input:hover {
+    opacity: 1;
+}
 .bottom {
     display: flex;
     flex-direction: row-reverse;
@@ -34,7 +47,14 @@ main {
 #author {
     align-self: flex-end;
     margin-bottom: 25px;
+    font-size: 1.5rem;
+    filter: sepia();
 }
+/*------------------SEARCH-------------------*/
+.gsc-control-cse, .gsc-control-cse-es {
+    border-radius: 5px;
+}
+
 /*------------------TIME-------------------*/
 h1.time {
     text-align: right;
@@ -42,6 +62,8 @@ h1.time {
 }
 /*------------------DOLAR API-------------------*/
 #cotizaciones {
+    display: flex;
+    gap: 40px;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -54,7 +76,6 @@ h1.time {
     align-items: center;
     margin: 0;
 }
-
 /*------------------WEATHER API-------------------*/
 div#weather {
     display: flex;
@@ -64,10 +85,6 @@ div#weather {
     align-self: flex-start;
     margin-top: -20px;
 
-}
-
-div#weather > img {
-    width: 100px;
 }
 
 p.weather-city {

@@ -22,7 +22,7 @@ fetch("https://dolarapi.com/v1/dolares/oficial")
         document.getElementById("tarjeta").innerHTML = `
             <div class="title">
                 <p>💵</p>
-                <span>Tarjeta - 100% impuestos</span>
+                <span>Tarjeta</span>
             </div>
             <p>Precio: $${data.venta * 2}</p>
         `
@@ -41,8 +41,8 @@ fetch("https://dolarapi.com/v1/dolares/oficial")
                 <p>💵</p>
                 <span>${data.nombre}</span>
             </div>
-            <p>Compra: $${data.compra}</p>
-            <p>Venta: $${data.venta}</p>
+            <p>C: $${data.compra}</p>
+            <p>V: $${data.venta}</p>
         `
     })
     .catch(err => console.error(err))
@@ -60,8 +60,8 @@ fetch("https://dolarapi.com/v1/dolares/blue")
                 <p>💵</p>
                 <span>${data.nombre}</span>
             </div>
-            <p>Compra: $${data.compra}</p>
-            <p>Venta: $${data.venta}</p>
+            <p>C: $${data.compra}</p>
+            <p>V: $${data.venta}</p>
         `
     })
     .catch(err => console.error(err))
