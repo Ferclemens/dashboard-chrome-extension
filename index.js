@@ -24,7 +24,7 @@ fetch("https://dolarapi.com/v1/dolares/oficial")
                 <p>💵</p>
                 <span>Tarjeta</span>
             </div>
-            <p>Precio: $${data.venta * 2}</p>
+            <p>Precio: $${data.venta + (data.venta * 1.55)}</p>
         `
     })
     .catch(err => console.error(err))

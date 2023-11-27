@@ -64,11 +64,13 @@ main {
 .input-text {
     position: absolute;
     width: 100%;
-    height: 35px;
-    border-radius: 15px;
+    height: 45px;
+    border-radius: 20px;
     border: none;
     padding-left: 40px;
     outline: none;
+    background-color: whitesmoke;
+    font-size: 1.2rem;
 }
 .input-text:active {
     border: none;
@@ -76,8 +78,8 @@ main {
 .google-logo {
     width: 30px;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 7px;
+    left: 4px;
 }
 
 /*------------------TIME-------------------*/
